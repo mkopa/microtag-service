@@ -1,6 +1,9 @@
 const pingController = {
   get: ((req, res) => {
-    res.end('pong');
+    const response = {
+      message: 'pong',
+    };
+    res.status(200).json(response);
   }),
 };
 

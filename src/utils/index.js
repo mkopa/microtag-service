@@ -1,3 +1,4 @@
-const logger = require('./src/logger');
+const logger = require('./logger');
+const errors = require('./errors');
 
-module.exports = { logger };
+module.exports = { logger, errors };

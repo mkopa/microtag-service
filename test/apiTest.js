@@ -20,4 +20,20 @@ describe('GET /api/ping', (() => {
   }));
 }));
 
+describe('GET /api/notFoundEndpoint', (() => {
+  it('respond with json containing a 404 Not Found Error', ((done) => {
+    response = {
+      success: false,
+      errors: ['Not found error'],
+    };
+    request(app)
+      .get('/api/notFoundEndpoint')
+      .set('Accept', 'application/json')
+      .expect('Content-Type', 'application/json; charset=utf-8')
+      .expect(404)
+      .expect(JSON.stringify(response))
+      .end(done);
+  }));
+}));
+
 after(stopServer);

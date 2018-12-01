@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const ping = require('./ping');
+const ping = require('./src/ping');
 
 const router = new Router();
 

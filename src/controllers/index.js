@@ -1,3 +1,3 @@
-const pingController = require('./ping');
+const pingController = require('./src/ping');
 
 module.exports = { pingController };

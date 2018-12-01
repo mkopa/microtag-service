@@ -5,7 +5,7 @@ const { errors } = require('../utils');
 const router = new Router();
 
 router.use('/api', ping);
-router.get('*', ((req, res, next) => {
+router.use('*', ((req, res, next) => {
   next(new errors.NotFoundError());
 }));
 

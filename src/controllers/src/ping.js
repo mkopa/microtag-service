@@ -1,10 +1,5 @@
 const pingController = {
-  get: ((req, res) => {
-    const response = {
-      message: 'pong',
-    };
-    res.status(200).json(response);
-  }),
+  get: ((req, res) => res.jsonResponse('pong')),
 };
 
 module.exports = pingController;

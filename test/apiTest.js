@@ -7,6 +7,7 @@ const stopServer = require('../').stop;
 describe('GET /api/ping', (() => {
   it('respond with json containing a pong string', ((done) => {
     response = {
+      success: true,
       message: 'pong',
     };
     request(app)

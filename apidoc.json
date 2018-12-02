@@ -1,0 +1,11 @@
+{
+  "name": "microtag-service",
+  "version": "0.1.0",
+  "description": "API service for microtag project",
+  "title": "Microtag",
+  "url" : "http://localhost:8080",
+  "template": {
+  	"withCompare": true,
+  	"withGenerator": true
+  }
+}

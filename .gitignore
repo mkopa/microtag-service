@@ -84,3 +84,6 @@ typings/
 
 # IDE
 .vscode
+
+#doc
+doc/

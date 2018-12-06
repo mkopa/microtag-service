@@ -55,7 +55,7 @@ describe('/api/notFoundEndpoint', (() => {
       errors: ['Not found error'],
     };
     request(app)
-      .post('/api/notFoundEndpoint')
+      .put('/api/notFoundEndpoint')
       .set('Accept', 'application/json')
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(404)
@@ -69,7 +69,7 @@ describe('/api/notFoundEndpoint', (() => {
       errors: ['Not found error'],
     };
     request(app)
-      .post('/api/notFoundEndpoint')
+      .delete('/api/notFoundEndpoint')
       .set('Accept', 'application/json')
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(404)

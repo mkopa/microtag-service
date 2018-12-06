@@ -1,0 +1,12 @@
+dist: trusty
+language: node_js
+sudo: false
+node_js:
+  - 10
+env:
+  - SERVER_PORT=8080
+  - LOGGER_FILENAME=app.log
+install:
+  - npm install
+script:
+  - npm test
